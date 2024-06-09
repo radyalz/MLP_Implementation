@@ -1,30 +1,3 @@
-# import os
-# import tensorflow as tf
-# # دانلود کننده دیتاست
-# def download_mnist():
-#     dataset_dir = "data"
-#     os.makedirs(dataset_dir, exist_ok=True)
-    
-#     # بارگذاری و دانلود دیتاست با استفاده از تنسرفلو
-#     (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-
-#     # فایل ها را در مکان مشخصی که تایین کردم ذخیره میکنم
-#     train_images_path = os.path.join(dataset_dir, 'train-images-idx3-ubyte')
-#     train_labels_path = os.path.join(dataset_dir, 'train-labels-idx1-ubyte')
-#     test_images_path = os.path.join(dataset_dir, 't10k-images-idx3-ubyte')
-#     test_labels_path = os.path.join(dataset_dir, 't10k-labels-idx1-ubyte')
-    
-#     # ذخیره داده های آموزشی 
-#     x_train.tofile(train_images_path)
-#     y_train.tofile(train_labels_path)
-    
-#     # ذخیره داده های تست 
-#     x_test.tofile(test_images_path)
-#     y_test.tofile(test_labels_path)
-
-# if __name__ == "__main__":
-#     download_mnist()
-
 import os
 import numpy as np
 import struct
